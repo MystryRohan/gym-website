@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.navbar {
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181e20;
+  font-family: "Roboto";
+}
+.navbar ul {
+  display: flex;
+  width: 40%;
+}
+.navbar li {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar a:hover {
+  transition: 0.5s;
+  color: #ff4c29;
+}
+.logo {
+  margin-left: 40px;
+  height: 10vh;
+  width: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bakbak One";
+}
+.logo-img {
+  height: 100%;
+  width: 100%;
+}
+.logo h3 {
+  color: white;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home img {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+.moto {
+  padding: 15px 15px;
+  z-index: 1;
+  width: 25rem;
+  /* background-color: #082032; */
+  background-color: #13171a;
+}
+.outer-border {
+  height: 25rem;
+  width: 20rem;
+  position: absolute;
+  transform: translateX(-5rem);
+  border: 10px solid #ff4c29;
+}
+.moto h1 {
+  font-family: "Anton";
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 3rem;
+}
+.moto h3 {
+  font-family: "Bakbak One";
+  font-size: 2rem;
+}
+.moto p {
+  font-family: "Roboto";
+}
+.big-btn {
+  width: 15rem;
+  height: 2rem;
+  font-family: "Bakbak One";
+  font-size: medium;
+  background-color: #ff4c29;
+  border: none;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+span {
+  color: #ff4c29;
+}
+.plans-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #082032; */
+  background-color: #13171a;
+}
+.plan {
+  position: relative;
+  margin: 0px 10px;
+  padding: 20px 10px;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 20px;
+  color: #435164;
+  font-size: large;
+  font-family: "Roboto";
+}
+.plan ul {
+  list-style: circle !important;
+}
+.plan h3 {
+  display: block;
+  width: 100%;
+  margin-bottom: 3rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: "Anton";
+  background-color: #ff4c29;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
+}
+.plan-btn {
+  position: absolute;
+  display: inline-block;
+  bottom: 3rem;
+  width: 150px;
+  height: 30px;
+  font-family: "Roboto Mono";
+  /* background-color: #334756; */
+  background-color: #373b3f;
+  border: none;
+  cursor: pointer;
+}
+.plan-btn:hover {
+  transition: 0.5s;
+  transform: translateY(-5px);
+  background-color: #ff4c29;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* background-color: #08243a; */
+  background-color: #191d20;
+  box-shadow: 1px 1px 5px 08243a, 1px 1px 5px #ffffff;
+}
+.intro {
+  padding: 5rem 5rem;
+  background-color: #13171a;
+}
+.intro img {
+  height: 30rem;
+}
+.buff,
+.weightloss,
+.cardio {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.cardio img {
+  /* transform: translateX(-3rem); */
+  height: 25rem;
+}
+.slogan {
+  color: #fff;
+  width: 40%;
+  font-family: "Bakbak One";
+  font-size: x-large;
+}
+.slogan h3 {
+  font-weight: 500;
+  color: #ff4c29;
+  font-family: "Anton";
+}
+footer {
+  background-color: #191d20;
+  color: #fff;
+  font-family: "Roboto";
+}
+.about {
+  width: 100%;
+  height: 20vh;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social .fab {
+  padding: 0px 10px;
+}
+.footer-heading {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+footer span {
+  padding: 0 5px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  transition: 0.5s;
+  color: #ff4c29;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar ul {
+    width: 50%;
+  }
+  .non {
+    /* background-color: #082032; */
+    background-color: #171b1d;
+    display: flex;
+    justify-content: center;
+  }
+  .home {
+    width: 90%;
+  }
+  .home img {
+    display: none;
+  }
+  .intro img {
+    height: 250px;
+    width: 200px;
+  }
+  .buff,
+  .weightloss,
+  .cardio {
+    flex-direction: column;
+  }
+  .weightloss :nth-child(1) {
+    order: 2;
+  }
+  .slogan {
+    width: 100%;
+    font-size: large;
+  }
+  .plans-section {
+    height: 200vh;
+    flex-direction: column;
+  }
+  .plan {
+    margin: 0%;
+    padding: 20px 20px;
+  }
+  .about {
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+  .social .fab {
+    padding: 0px 5px;
+  }
+}
